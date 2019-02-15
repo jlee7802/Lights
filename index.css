@@ -1,0 +1,88 @@
+.centerForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  border: none;
+  background: transparent;
+}
+
+.mainDiv{
+  background: black;
+}
+
+.mainInput{
+  background: rgb(77, 77, 77, 0.3);
+  color: White;
+  font-size: 40pt;
+  border: none;
+  outline: none;
+  height:110px;
+  width: 800px;
+  border-radius: 60px;
+  text-align: center;
+}
+
+.circle1 {
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle2 {
+  height: 50px;
+  width: 50px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  animation: backLight2;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+
+.circle3 {
+  height: 50px;
+  width: 50px;
+  background-color: blue;
+  border-radius: 50%;
+  position: absolute;
+  animation: backLight1;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+.circle4 {
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+  animation: backLight2;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+@keyframes backLight1 {
+  0% {background-color:red;}
+  25% {background-color:yellow;}
+  50% {background-color:blue;}
+  75% {background-color:green;}
+  100% {background-color:red;}
+}
+
+@keyframes backLight2 {
+  0% {background-color:orange;}
+  25% {background-color:green;}
+  50% {background-color:pink;}
+  75% {background-color:violet;}
+  100% {background-color:orange;}
+}
